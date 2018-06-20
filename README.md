@@ -3,11 +3,11 @@
 # ML-KA_EmotionEmoji
 
 This is a Python implementation of the neural network architecture for emotion classification, proposed by Gudi. [Paper](https://arxiv.org/abs/1512.00743). This network shows 67% accuracy on the FER2013 dataset and is capable of running in real time on CPUs.
-<br/>  
+</br>  
 The weights have not been uploaded due to GitHub's 100MB file size limit.
 
-This network has been trained with `FER2013` and `FER2013+` datasets. The first one provides labeled 48x48 images, labeled by one person per image. The second dataset uses FER2013 as image source but provides better labeling with lower label noise. FER2013+ has been labeled by 10 different people and contains records about each decision.  
-<\br>
+This network has been trained with `FER2013` and `FER2013+` datasets. The first one provides 35882 grayscale images with 48x48 resolution, labeled by one person per image. The second dataset uses FER2013 as image source but provides better labeling with lower label noise. FER2013+ has been labeled by 10 different people and contains records about each decision.  
+</br>
 To train the network datasets have to be placed in the folder `dataset_csv`. FER2013 Dataset can be downloaded from the official website of [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) and the FER2013+ dataset can be found [here](https://github.com/Microsoft/FERPlus)
 ## Training
 `python3 train.py -cascade`  
